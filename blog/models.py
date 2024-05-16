@@ -8,7 +8,7 @@ class PublishedManager(models.Manager):
 class Post(models.Model):
     class Status(models.TextChoices):
         DRAFT = "DF", "roboczy"
-        PUBLUSHED = "PB", "Opublikowany"
+        PUBLISHED = "PB", "Opublikowany"
 
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique=True)
