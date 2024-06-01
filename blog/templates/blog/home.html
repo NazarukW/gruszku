@@ -1,0 +1,25 @@
+{% load blog_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strona domowa</title>
+    <link href="{% static 'css/blog.css' %} " rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        <img src="../../static/honest_work.jpg" alt="Its aint much but honest work">
+    </div>
+    <div id="sidebar">
+        <h2>Strona domowa</h2>
+        <p>
+            Wybierz gdzie chcesz iść dalej
+        </p>
+        <ul>
+            <a href="{% url 'blog:post_list' %}">
+                BLOG
+            </a>
+        </ul>
+    </div>
+</body>
+</html>
